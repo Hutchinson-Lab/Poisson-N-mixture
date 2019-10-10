@@ -1,3 +1,7 @@
+This is the MATLAB implementation of the paper [Link Prediction Under Imperfect Detection: Collaborative Filtering for Ecological Networks](https://arxiv.org/pdf/1910.03659.pdf).
+
+
+
 # How to run
 
 ## With Synthetic Data
