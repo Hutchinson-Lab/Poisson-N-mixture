@@ -19,7 +19,8 @@ switch model
             'IDX',idx,'MM_ITERS',maxiter,'INITIAL',Init,'EXP_CODE',3);
     case 3 % IFMF
         Ynan(isnan(Ynan)) = 0; 
-        Y_est = IFMF3(Y_true,idx, Ynan, R, maxiter, 3);        
+        Y_est = ifmf(Y_true,idx, Ynan, R, maxiter, 3);
+        N_est = Y_est;
     case 4 % CF
         Ynan(isnan(Ynan)) = 0; 
         Y_est = colab_filtering_mod(Ynan,R,1,'Y_TRUE',Y_true,'IDX',idx,...
